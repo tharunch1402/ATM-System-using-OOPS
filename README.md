@@ -1,12 +1,16 @@
-ATM Based mini project work using OOPS
+This project is a basic ATM PIN system built using Python to practice the fundamentals of Object-Oriented Programming (OOPS).
 
+The program starts by asking the user to enter an ATM PIN and, after successful verification, displays a menu with different options. Users can check their balance, deposit money, withdraw money, and change their PIN through a menu-driven interface.
 
-
+This is a beginner-level project created to understand how classes, objects, and basic encapsulation work in real-world style applications. The project helped me gain hands-on experience with writing structured code and applying OOPS concepts in a simple and practical way.
 
 class ATM:
+
+
     def __init__(self, pin, balance=0):
         self.pin = pin
-        self.balance = balance
+        self.balance = balance  
+        
     def verify_pin(self):
         entered_pin = int(input("Enter your ATM PIN: "))
         if entered_pin == self.pin:
