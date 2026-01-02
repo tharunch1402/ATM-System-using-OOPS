@@ -7,7 +7,6 @@ class ATM:
     def __init__(self, pin, balance=0):
         self.pin = pin
         self.balance = balance
-
     def verify_pin(self):
         entered_pin = int(input("Enter your ATM PIN: "))
         if entered_pin == self.pin:
